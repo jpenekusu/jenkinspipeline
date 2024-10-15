@@ -1,6 +1,6 @@
 pipeline {
     
-    agent any
+    agent java
 
     tools {
         maven "M3"
