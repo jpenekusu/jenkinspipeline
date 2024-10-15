@@ -1,7 +1,9 @@
 pipeline {
     
     agent {
-        java
+        node {
+            label 'java' 
+        }
     }
 
     tools {
