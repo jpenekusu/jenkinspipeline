@@ -25,6 +25,15 @@ pipeline {
                 }
             }
         }        
-
+        stage('Testing ...') {
+            steps {
+                sh "mvn test"
+            }
+        }        
+        stage('Building ...') {
+            steps {
+                sh "mvn -B -DskipTests clean package"
+            }
+        }
     }
-}
+}   
